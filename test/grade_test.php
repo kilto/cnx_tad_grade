@@ -23,7 +23,7 @@ class GradeUnitTest extends PHPUnit_Framework_TestCase{
 		$grade = new Grade();
 		$this->assertEquals("F",$grade->tad(49));
 	}
-	
+	 
 
 }
 
