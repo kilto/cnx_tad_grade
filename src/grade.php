@@ -20,7 +20,7 @@ class Grade
 }	
 	$score = $_POST["score"];
 	$grade = new Grade();		
-	echo "Grade " . $grade->tad($score);
+	echo "Grades " . $grade->tad($score);
 
 ?>
 
