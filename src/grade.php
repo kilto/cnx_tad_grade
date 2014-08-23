@@ -17,12 +17,14 @@ class Grade
 			return "F";
 		}
 	}
+}	
+	$score = $_POST["score"];
+	$grade = new Grade();		
+	echo "Grade " . $grade->tad($score);
 
-
-
+?>
 
 
 	
-}
 
-?>
+
