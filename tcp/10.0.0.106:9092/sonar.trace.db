@@ -1,0 +1,3 @@
+08-24 10:19:02 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Table "METRICS" not found; SQL statement:
+select metric0_.id as id7_, metric0_.best_value as best2_7_, metric0_.delete_historical_data as delete3_7_, metric0_.description as descript4_7_, metric0_.direction as direction7_, metric0_.domain as domain7_, metric0_.enabled as enabled7_, metric0_.hidden as hidden7_, metric0_.name as name7_, metric0_.short_name as short10_7_, metric0_.optimized_best_value as optimized11_7_, metric0_.origin as origin7_, metric0_.qualitative as qualita13_7_, metric0_.val_type as val14_7_, metric0_.user_managed as user15_7_, metric0_.worst_value as worst16_7_ from metrics metric0_ where metric0_.enabled=? [42102-172]

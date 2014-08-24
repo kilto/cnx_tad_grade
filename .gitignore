@@ -1,3 +1,7 @@
 .DS_Store
 composer.lock
 /vendor
+sonar/sonar-runner-2.4/bin/sonar-runner
+sonar/sonar-runner-2.4/bin/sonar-runner.bat
+sonar/sonar-runner-2.4/conf/sonar-runner.properties
+sonar/sonar-runner-2.4/lib/sonar-runner-dist-2.4.jar

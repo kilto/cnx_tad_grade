@@ -2,25 +2,28 @@
 /**
 *  
 */
-class Grade 
-{
-	public function tad($score){
+class Grade {
+
+public function tad($score){
+		$result = "F";
 		if($score >= 80){
-			return "A";	
+			$result="A";	
 		}else if($score >= 70){
-			return "B";
+			$result="B";
 		}else if($score >= 60){
-			return "C";
+			$result="C";
 		}else if($score >= 50){
-			return "D";
+			$result="D";
 		}else{
-			return "F";
+			$result="F";
 		}
+		return $result;
 	}
-}	
-	$score = $_POST["score"];
-	$grade = new Grade();		
-	echo "Grades " . $grade->tad($score);
+}
+
+$score = $_POST["score"];
+$grade = new Grade();		
+echo "Grades " . $grade->tad($score);
 
 ?>
 

@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="GradeUnitTest" file="/Users/koolapat/Jenkin_train/test/grade_test.php" tests="5" assertions="5" failures="0" errors="0" time="0.005576">
-    <testcase name="test_socre_80_get_A" class="GradeUnitTest" file="/Users/koolapat/Jenkin_train/test/grade_test.php" line="5" assertions="1" time="0.004140"/>
-    <testcase name="test_socre_70_get_B" class="GradeUnitTest" file="/Users/koolapat/Jenkin_train/test/grade_test.php" line="10" assertions="1" time="0.000581"/>
-    <testcase name="test_socre_60_get_C" class="GradeUnitTest" file="/Users/koolapat/Jenkin_train/test/grade_test.php" line="14" assertions="1" time="0.000316"/>
-    <testcase name="test_socre_50_get_D" class="GradeUnitTest" file="/Users/koolapat/Jenkin_train/test/grade_test.php" line="18" assertions="1" time="0.000271"/>
-    <testcase name="test_socre_0_get_F" class="GradeUnitTest" file="/Users/koolapat/Jenkin_train/test/grade_test.php" line="22" assertions="1" time="0.000268"/>
+  <testsuite name="GradeUnitTest" file="/Users/koolapat/Jenkin_train/test/grade_test.php" tests="5" assertions="5" failures="0" errors="0" time="0.006774">
+    <testcase name="test_socre_80_get_A" class="GradeUnitTest" file="/Users/koolapat/Jenkin_train/test/grade_test.php" line="5" assertions="1" time="0.004193">
+      <system-out>Grades F
+
+	
+
+
+</system-out>
+    </testcase>
+    <testcase name="test_socre_70_get_B" class="GradeUnitTest" file="/Users/koolapat/Jenkin_train/test/grade_test.php" line="10" assertions="1" time="0.001161"/>
+    <testcase name="test_socre_60_get_C" class="GradeUnitTest" file="/Users/koolapat/Jenkin_train/test/grade_test.php" line="14" assertions="1" time="0.000542"/>
+    <testcase name="test_socre_50_get_D" class="GradeUnitTest" file="/Users/koolapat/Jenkin_train/test/grade_test.php" line="18" assertions="1" time="0.000440"/>
+    <testcase name="test_socre_0_get_F" class="GradeUnitTest" file="/Users/koolapat/Jenkin_train/test/grade_test.php" line="22" assertions="1" time="0.000438"/>
   </testsuite>
 </testsuites>
