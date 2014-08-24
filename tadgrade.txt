@@ -1,0 +1,26 @@
+*** Setting ***
+Library    Selenium2Library
+
+
+*** Variables ***
+
+
+
+*** Testcases ***
+Tad grade 5 F
+	Open Browser    http://immense-mountain-5993.herokuapp.com/src/
+	Input Text    score    5
+	Click Button    submit
+	Wait Until Page Contains "Grades F"
+	Close Browser
+
+#Tad grade 80 A
+#	Open Browser    http://immense-mountain-5993.herokuapp.com/src/
+#	Input Text    score    80
+#	Click Button    submit
+#	Wait Until Page Contains "Grade F"
+#	Close Browser
+
+*** Keywords ***
+
+

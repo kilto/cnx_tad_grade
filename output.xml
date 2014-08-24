@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20140824 14:16:22.914" generator="Robot 2.8.5 (Python 2.7.5 on darwin)">
+<suite source="/Users/koolapat/Jenkin_train/tadgrade.txt" id="s1" name="Tadgrade">
+<test id="s1-t1" name="Tad grade 5 F">
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://immense-mountain-5993.herokuapp.com/src/</arg>
+</arguments>
+<msg timestamp="20140824 14:16:23.017" level="INFO">Opening browser 'firefox' to base url 'http://immense-mountain-5993.herokuapp.com/src/'</msg>
+<status status="PASS" endtime="20140824 14:16:25.062" starttime="20140824 14:16:23.016"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>score</arg>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20140824 14:16:25.064" level="INFO">Typing text '5' into text field 'score'</msg>
+<status status="PASS" endtime="20140824 14:16:25.162" starttime="20140824 14:16:25.063"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>submit</arg>
+</arguments>
+<msg timestamp="20140824 14:16:25.162" level="INFO">Clicking button 'submit'.</msg>
+<status status="PASS" endtime="20140824 14:16:25.881" starttime="20140824 14:16:25.162"></status>
+</kw>
+<kw type="kw" name="Wait Until Page Contains &quot;Grade F&quot;">
+<doc></doc>
+<arguments>
+</arguments>
+<msg timestamp="20140824 14:16:25.882" level="FAIL">No keyword with name 'Wait Until Page Contains "Grade F"' found.</msg>
+<status status="FAIL" endtime="20140824 14:16:25.882" starttime="20140824 14:16:25.881"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140824 14:16:25.883" critical="yes" starttime="20140824 14:16:23.016">No keyword with name 'Wait Until Page Contains "Grade F"' found.</status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20140824 14:16:25.884" starttime="20140824 14:16:22.915"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" pass="0" id="s1" name="Tadgrade">Tadgrade</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

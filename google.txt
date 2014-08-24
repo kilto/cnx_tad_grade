@@ -1,0 +1,19 @@
+*** Setting ***
+Library    Selenium2Library
+
+
+*** Variables ***
+
+
+
+*** Testcases ***
+Search 
+	Open Browser    http://www.google.com
+	Input Text    gbqfq    เชียงใหม่
+	Click Button    gbqfb
+	Wait Until Page Contains    เชียงใหม่
+	Close Browser
+	
+*** Keywords ***
+
+
