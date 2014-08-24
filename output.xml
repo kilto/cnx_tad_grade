@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20140824 14:16:22.914" generator="Robot 2.8.5 (Python 2.7.5 on darwin)">
+<robot generated="20140824 14:21:38.125" generator="Robot 2.8.5 (Python 2.7.5 on darwin)">
 <suite source="/Users/koolapat/Jenkin_train/tadgrade.txt" id="s1" name="Tadgrade">
 <test id="s1-t1" name="Tad grade 5 F">
 <kw type="kw" name="Selenium2Library.Open Browser">
@@ -7,8 +7,8 @@
 <arguments>
 <arg>http://immense-mountain-5993.herokuapp.com/src/</arg>
 </arguments>
-<msg timestamp="20140824 14:16:23.017" level="INFO">Opening browser 'firefox' to base url 'http://immense-mountain-5993.herokuapp.com/src/'</msg>
-<status status="PASS" endtime="20140824 14:16:25.062" starttime="20140824 14:16:23.016"></status>
+<msg timestamp="20140824 14:21:38.231" level="INFO">Opening browser 'firefox' to base url 'http://immense-mountain-5993.herokuapp.com/src/'</msg>
+<status status="PASS" endtime="20140824 14:21:40.456" starttime="20140824 14:21:38.230"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Input Text">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -16,33 +16,41 @@
 <arg>score</arg>
 <arg>5</arg>
 </arguments>
-<msg timestamp="20140824 14:16:25.064" level="INFO">Typing text '5' into text field 'score'</msg>
-<status status="PASS" endtime="20140824 14:16:25.162" starttime="20140824 14:16:25.063"></status>
+<msg timestamp="20140824 14:21:40.457" level="INFO">Typing text '5' into text field 'score'</msg>
+<status status="PASS" endtime="20140824 14:21:40.549" starttime="20140824 14:21:40.457"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Click Button">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>submit</arg>
 </arguments>
-<msg timestamp="20140824 14:16:25.162" level="INFO">Clicking button 'submit'.</msg>
-<status status="PASS" endtime="20140824 14:16:25.881" starttime="20140824 14:16:25.162"></status>
+<msg timestamp="20140824 14:21:40.549" level="INFO">Clicking button 'submit'.</msg>
+<status status="PASS" endtime="20140824 14:21:41.613" starttime="20140824 14:21:40.549"></status>
 </kw>
-<kw type="kw" name="Wait Until Page Contains &quot;Grade F&quot;">
-<doc></doc>
+<kw type="kw" name="Selenium2Library.Wait Until Page Contains">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>"Grades F"</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
 <arguments>
 </arguments>
-<msg timestamp="20140824 14:16:25.882" level="FAIL">No keyword with name 'Wait Until Page Contains "Grade F"' found.</msg>
-<status status="FAIL" endtime="20140824 14:16:25.882" starttime="20140824 14:16:25.881"></status>
+<msg timestamp="20140824 14:21:46.759" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20140824 14:21:46.759" starttime="20140824 14:21:46.638"></status>
+</kw>
+<msg timestamp="20140824 14:21:46.760" level="FAIL">Text '"Grades F"' did not appear in 5 seconds</msg>
+<status status="FAIL" endtime="20140824 14:21:46.760" starttime="20140824 14:21:41.613"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status status="FAIL" endtime="20140824 14:16:25.883" critical="yes" starttime="20140824 14:16:23.016">No keyword with name 'Wait Until Page Contains "Grade F"' found.</status>
+<status status="FAIL" endtime="20140824 14:21:46.760" critical="yes" starttime="20140824 14:21:38.230">Text '"Grades F"' did not appear in 5 seconds</status>
 </test>
 <doc></doc>
 <metadata>
 </metadata>
-<status status="FAIL" endtime="20140824 14:16:25.884" starttime="20140824 14:16:22.915"></status>
+<status status="FAIL" endtime="20140824 14:21:46.761" starttime="20140824 14:21:38.125"></status>
 </suite>
 <statistics>
 <total>
