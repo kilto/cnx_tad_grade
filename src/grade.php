@@ -23,7 +23,7 @@ public function tad($score){
 
 $score = $_POST["score"];
 $grade = new Grade();		
-echo "Grades " . $grade->tad($score);
+echo "<div id="gradeID">Grades " . $grade->tad($score) ."</div>";
 
 ?>
 
