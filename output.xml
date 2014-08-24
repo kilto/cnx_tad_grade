@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20140824 14:21:38.125" generator="Robot 2.8.5 (Python 2.7.5 on darwin)">
+<robot generated="20140824 14:30:44.896" generator="Robot 2.8.5 (Python 2.7.5 on darwin)">
 <suite source="/Users/koolapat/Jenkin_train/tadgrade.txt" id="s1" name="Tadgrade">
 <test id="s1-t1" name="Tad grade 5 F">
 <kw type="kw" name="Selenium2Library.Open Browser">
@@ -7,8 +7,8 @@
 <arguments>
 <arg>http://immense-mountain-5993.herokuapp.com/src/</arg>
 </arguments>
-<msg timestamp="20140824 14:21:38.231" level="INFO">Opening browser 'firefox' to base url 'http://immense-mountain-5993.herokuapp.com/src/'</msg>
-<status status="PASS" endtime="20140824 14:21:40.456" starttime="20140824 14:21:38.230"></status>
+<msg timestamp="20140824 14:30:45.006" level="INFO">Opening browser 'firefox' to base url 'http://immense-mountain-5993.herokuapp.com/src/'</msg>
+<status status="PASS" endtime="20140824 14:30:48.102" starttime="20140824 14:30:45.005"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Input Text">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -16,51 +16,225 @@
 <arg>score</arg>
 <arg>5</arg>
 </arguments>
-<msg timestamp="20140824 14:21:40.457" level="INFO">Typing text '5' into text field 'score'</msg>
-<status status="PASS" endtime="20140824 14:21:40.549" starttime="20140824 14:21:40.457"></status>
+<msg timestamp="20140824 14:30:48.103" level="INFO">Typing text '5' into text field 'score'</msg>
+<status status="PASS" endtime="20140824 14:30:48.186" starttime="20140824 14:30:48.102"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Click Button">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>submit</arg>
 </arguments>
-<msg timestamp="20140824 14:21:40.549" level="INFO">Clicking button 'submit'.</msg>
-<status status="PASS" endtime="20140824 14:21:41.613" starttime="20140824 14:21:40.549"></status>
+<msg timestamp="20140824 14:30:48.187" level="INFO">Clicking button 'submit'.</msg>
+<status status="PASS" endtime="20140824 14:30:48.941" starttime="20140824 14:30:48.187"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Wait Until Page Contains">
 <doc>Waits until `text` appears on current page.</doc>
 <arguments>
-<arg>"Grades F"</arg>
+<arg>Grades F</arg>
 </arguments>
-<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="PASS" endtime="20140824 14:30:48.952" starttime="20140824 14:30:48.941"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close Browser">
+<doc>Closes the current browser.</doc>
 <arguments>
 </arguments>
-<msg timestamp="20140824 14:21:46.759" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20140824 14:21:46.759" starttime="20140824 14:21:46.638"></status>
-</kw>
-<msg timestamp="20140824 14:21:46.760" level="FAIL">Text '"Grades F"' did not appear in 5 seconds</msg>
-<status status="FAIL" endtime="20140824 14:21:46.760" starttime="20140824 14:21:41.613"></status>
+<status status="PASS" endtime="20140824 14:30:49.006" starttime="20140824 14:30:48.952"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status status="FAIL" endtime="20140824 14:21:46.760" critical="yes" starttime="20140824 14:21:38.230">Text '"Grades F"' did not appear in 5 seconds</status>
+<status status="PASS" endtime="20140824 14:30:49.007" critical="yes" starttime="20140824 14:30:45.004"></status>
+</test>
+<test id="s1-t2" name="Tad grade 80 A">
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://immense-mountain-5993.herokuapp.com/src/</arg>
+</arguments>
+<msg timestamp="20140824 14:30:49.008" level="INFO">Opening browser 'firefox' to base url 'http://immense-mountain-5993.herokuapp.com/src/'</msg>
+<status status="PASS" endtime="20140824 14:30:51.006" starttime="20140824 14:30:49.008"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>score</arg>
+<arg>80</arg>
+</arguments>
+<msg timestamp="20140824 14:30:51.007" level="INFO">Typing text '80' into text field 'score'</msg>
+<status status="PASS" endtime="20140824 14:30:51.098" starttime="20140824 14:30:51.006"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>submit</arg>
+</arguments>
+<msg timestamp="20140824 14:30:51.099" level="INFO">Clicking button 'submit'.</msg>
+<status status="PASS" endtime="20140824 14:30:51.918" starttime="20140824 14:30:51.098"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Wait Until Page Contains">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Grades A</arg>
+</arguments>
+<status status="PASS" endtime="20140824 14:30:51.930" starttime="20140824 14:30:51.918"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close Browser">
+<doc>Closes the current browser.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140824 14:30:51.981" starttime="20140824 14:30:51.931"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140824 14:30:51.982" critical="yes" starttime="20140824 14:30:49.007"></status>
+</test>
+<test id="s1-t3" name="Tad grade 75 B">
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://immense-mountain-5993.herokuapp.com/src/</arg>
+</arguments>
+<msg timestamp="20140824 14:30:51.983" level="INFO">Opening browser 'firefox' to base url 'http://immense-mountain-5993.herokuapp.com/src/'</msg>
+<status status="PASS" endtime="20140824 14:30:54.291" starttime="20140824 14:30:51.983"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>score</arg>
+<arg>75</arg>
+</arguments>
+<msg timestamp="20140824 14:30:54.291" level="INFO">Typing text '75' into text field 'score'</msg>
+<status status="PASS" endtime="20140824 14:30:54.380" starttime="20140824 14:30:54.291"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>submit</arg>
+</arguments>
+<msg timestamp="20140824 14:30:54.381" level="INFO">Clicking button 'submit'.</msg>
+<status status="PASS" endtime="20140824 14:30:55.170" starttime="20140824 14:30:54.381"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Wait Until Page Contains">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Grades B</arg>
+</arguments>
+<status status="PASS" endtime="20140824 14:30:55.180" starttime="20140824 14:30:55.171"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close Browser">
+<doc>Closes the current browser.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140824 14:30:55.224" starttime="20140824 14:30:55.181"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140824 14:30:55.225" critical="yes" starttime="20140824 14:30:51.982"></status>
+</test>
+<test id="s1-t4" name="Tad grade 65 C">
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://immense-mountain-5993.herokuapp.com/src/</arg>
+</arguments>
+<msg timestamp="20140824 14:30:55.226" level="INFO">Opening browser 'firefox' to base url 'http://immense-mountain-5993.herokuapp.com/src/'</msg>
+<status status="PASS" endtime="20140824 14:30:57.227" starttime="20140824 14:30:55.226"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>score</arg>
+<arg>65</arg>
+</arguments>
+<msg timestamp="20140824 14:30:57.228" level="INFO">Typing text '65' into text field 'score'</msg>
+<status status="PASS" endtime="20140824 14:30:57.312" starttime="20140824 14:30:57.228"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>submit</arg>
+</arguments>
+<msg timestamp="20140824 14:30:57.313" level="INFO">Clicking button 'submit'.</msg>
+<status status="PASS" endtime="20140824 14:30:58.063" starttime="20140824 14:30:57.313"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Wait Until Page Contains">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Grades C</arg>
+</arguments>
+<status status="PASS" endtime="20140824 14:30:58.073" starttime="20140824 14:30:58.063"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close Browser">
+<doc>Closes the current browser.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140824 14:30:58.120" starttime="20140824 14:30:58.073"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140824 14:30:58.121" critical="yes" starttime="20140824 14:30:55.225"></status>
+</test>
+<test id="s1-t5" name="Tad grade 54 D">
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://immense-mountain-5993.herokuapp.com/src/</arg>
+</arguments>
+<msg timestamp="20140824 14:30:58.122" level="INFO">Opening browser 'firefox' to base url 'http://immense-mountain-5993.herokuapp.com/src/'</msg>
+<status status="PASS" endtime="20140824 14:31:00.153" starttime="20140824 14:30:58.122"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>score</arg>
+<arg>54</arg>
+</arguments>
+<msg timestamp="20140824 14:31:00.154" level="INFO">Typing text '54' into text field 'score'</msg>
+<status status="PASS" endtime="20140824 14:31:00.241" starttime="20140824 14:31:00.154"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>submit</arg>
+</arguments>
+<msg timestamp="20140824 14:31:00.242" level="INFO">Clicking button 'submit'.</msg>
+<status status="PASS" endtime="20140824 14:31:01.041" starttime="20140824 14:31:00.242"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Wait Until Page Contains">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Grades D</arg>
+</arguments>
+<status status="PASS" endtime="20140824 14:31:01.059" starttime="20140824 14:31:01.041"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close Browser">
+<doc>Closes the current browser.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140824 14:31:01.107" starttime="20140824 14:31:01.059"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140824 14:31:01.108" critical="yes" starttime="20140824 14:30:58.121"></status>
 </test>
 <doc></doc>
 <metadata>
 </metadata>
-<status status="FAIL" endtime="20140824 14:21:46.761" starttime="20140824 14:21:38.125"></status>
+<status status="PASS" endtime="20140824 14:31:01.110" starttime="20140824 14:30:44.897"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="1" pass="0">Critical Tests</stat>
-<stat fail="1" pass="0">All Tests</stat>
+<stat fail="0" pass="5">Critical Tests</stat>
+<stat fail="0" pass="5">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="1" pass="0" id="s1" name="Tadgrade">Tadgrade</stat>
+<stat fail="0" pass="5" id="s1" name="Tadgrade">Tadgrade</stat>
 </suite>
 </statistics>
 <errors>
