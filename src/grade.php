@@ -7,7 +7,7 @@ class Grade {
 public function tad($score){
 		$result = "F";
 		if($score >= 80){
-			$result="A";	
+			$result="F";	
 		}else if($score >= 70){
 			$result="B";
 		}else if($score >= 60){
